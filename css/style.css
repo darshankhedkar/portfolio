@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*=================================================
+                    Navigation Styles
+==================================================*/
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-nav a {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;    
+}
+
+.logo-name a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo-name a {
+    color: #000;
+    font-family: 'Monoton', cursive;
+    font-size: 30px;
+}
+
+.collapse ul {
+    padding: 10px;
+}
+.nav-link {
+    color: #000 !important;
+    text-align: center;
+}
+
+.nav-link:hover{
+    color: #000;
+}
+
+.navbar-toggle {
+    border: 1px solid #333 !important;
+}
+
+.navbar-toggle:hover {
+    background-color: #129CF3 !important;
+    border: 1px solid #129CF3 !important;
+}
+
+.navbar-bar {
+    color: #333 !important;
+    background-color: #333 !important;
+}
+
+.navbar-toggle:hover .icon-bar {
+    background-color: #fff !important;   
+}
+
+.nav-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 29%;
+    width: 40px;
+    height: 2px;
+    background-color: #129CF3; 
+    transition: transform 0.5s ease;
+    transform: scale(1.5);
+    text-align: center;
+}
+
+.back:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+    width: 80px !important;
+    height: 2px;
+    background-color: #129CF3; 
+    transition: transform 0.5s ease;
+    transform: scale(1.5);
+}
+
+.navbar-nav .resume {
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 14px;
+    text-align: center;
+}
+
+.navbar-nav .resume:hover {
+    border-color: #129CF3;
+    background-color: #129CF3 !important;
+    color: #fff !important;
+}
+
+/*=================================================
+Screen size 767px after Styles (navbar responsive)
+==================================================*/
+
+@media only screen and (max-width: 767px) {
+    
+    .collapse li {
+        border-bottom: 1px solid #333;
+    }
+    
+   .nav-link:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 45%;
+        width: 40px;
+        height: 2px;
+        background-color: #129CF3; 
+        transition: transform 0.5s ease;
+        transform: scale(1.5);
+        text-align: center;
+    }
+    
+    .back:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 40%;
+        width: 80px !important;
+        height: 2px;
+        background-color: #129CF3; 
+        transition: transform 0.5s ease;
+        transform: scale(1.5);
+    }
+    
+ 
+}
+/*====================================================
+END Screen size 767px after Styles (navbar responsive)
+======================================================*/
+
+
+/*=================================================
+                    Home Styles
+==================================================*/
+.slider {
+    background-image: url(../img/backgroundImage.png);
+    width: 100%;
+    height: 750px;
+    margin-top: 85px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider-content h1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 80px;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color: #DAA159;
+}
+
+/*=================================================
+                    About Styles
+==================================================*/
+.about {
+    background-color: rgb(249, 249, 249);
+    margin-top: -140px;
+    padding-bottom: 80px;
+}
+
+.about-title h2 {
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+.about-title h2:after {
+    content: "";
+    position: absolute;
+    background-color: #129CF3;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -30px;
+}
+
+.about-info {
+    padding-top: 80px;
+}
+
+.about-info h3 {
+    color: #DAA159;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.about-info p {
+    font-family: 'Droid Sans Mono';
+    color: #888888;
+    font-size: 16px;
+    padding-top: 12px;
+    letter-spacing: 1px;   
+}
+
+/*=================================================
+                    Background Styles
+==================================================*/
+.background-title h2 {
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+.background-title h2:after {
+    content: "";
+    position: absolute;
+    background-color: #129CF3;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -30px;
+}
+
+.background-info {
+    padding-top: 80px;
+}
+
+.signature {
+    font-family: 'Sacramento', cursive !important;
+    color: #000 !important;
+    font-style: normal !important;
+    font-size: 32px !important;
+}
+
+.background-info p {
+    font-family: 'Droid Sans Mono';
+    color: #888888;
+    font-size: 16px;
+    padding-top: 12px;
+    letter-spacing: 1px;
+    line-height: 26px; 
+}
+
+.background {
+    padding-bottom: 80px;
+}
+
+/*=================================================
+                    Work Styles
+==================================================*/
+.work-title h2 {
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.work-title h2:after {
+    content: "";
+    position: absolute;
+    background-color: #129CF3;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -30px;
+}
+
+.img-project {
+    padding-top: 80px;
+}
+
+.no-gutters .img-wrapper {
+    overflow:hidden;
+}
+
+.no-gutters .img-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.no-gutters .img-wrapper img:hover {
+    transform: scale(1.5);
+}
+
+.work {
+    padding-bottom: 80px;
+}
+
+
+/*=================================================
+                    Skills Styles
+==================================================*/
+#skills {
+    background-color: rgb(249, 249, 249);
+    padding-bottom: 50px;
+}
+
+.skills-title h2 {
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.skills-title h2:after {
+    content: "";
+    position: absolute;
+    background-color: #129CF3;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -30px;
+}
+
+.skills {
+    padding-top: 80px;    
+}
+
+.skill-info h4 {
+    color: #DDA159;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.skill-info p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888888;
+}
+
+.skill-info .progress {
+    margin-bottom: 25px;
+    background: #ddd;
+    height: 22px;
+    margin-top: -12px;
+}
+
+.skill-info .progress-bar {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #129CF3;
+}
+
+/*=================================================
+                    Say Hello Styles
+==================================================*/
+.say-title h2 {
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.say-title h2:after {
+    content: "";
+    position: absolute;
+    background-color: #129CF3;
+    width: 60px;
+    height: 2px;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -30px;
+}
+
+.say-info .say-name {
+    color: #888888;
+    font-size: 20px;
+    padding-top: 80px;
+}
+
+.say-info .india {
+    color: #888888;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.say-contact .mobile-no a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #129CF3;
+    
+}
+
+.say-contact .email a {
+    color: #129CF3;
+}
+
+.say-contact a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.say-contact {
+    padding-bottom: 50px;
+}
+/*=================================================
+                    footer Styles
+==================================================*/
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #232323;
+    color: #fff;
+}
+
+.footer-name h3{
+    margin-top: 80px;
+    font-family: 'Monoton', cursive;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.footer-name a {
+    color: #fff;
+}
+.footer-name a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-info {
+    color: #888888;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Droid Sans Mono';
+    letter-spacing: 1px;
+}
+
+.github {
+    color: red;
+    font-size: 20px;
+}
+
+.github:hover {
+    text-decoration: none;
+    color: #129CF3;
+}
+
+.social-icon a {
+    padding-left: 20px;
+    font-size: 20px;
+    color: #888888;
+}
+
+.social-icon a:hover {
+    color: #DDA159;
+    text-decoration: none;
+}
